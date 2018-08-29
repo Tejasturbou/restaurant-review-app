@@ -1,0 +1,92 @@
+
+@media screen and (max-width: 730px){
+
+	#restaurants-list {
+		grid-template-columns: 1fr;
+	}
+
+	#restaurants-list li{
+		padding: 0;
+	}
+
+	#restaurants-list .restaurant-img {
+		margin: 0;
+	}
+
+	#restaurants-list li h1 {
+		margin: 10px 20px;
+	}
+
+	#restaurants-list p {
+    	margin: 0 20px;
+	}
+
+	#restaurants-list li a {
+		width: 90%;
+    	margin: 15px;
+    }
+    #breadcrumb{
+    	width: 100%;
+    	z-index: 9999;
+    }
+	.inside #map-container {
+		position: relative;
+		top: 130px;
+    	height: 400px;
+    	width: 100%;
+	}
+	.inside #footer{
+		width: 100%;
+	}
+
+	#restaurant-container{
+		width: 100%;
+		padding: 140px 0 30px;
+	}
+	#reviews-container{
+		width: 100%;
+		padding: 0;
+	}
+
+	ul#reviews-list li{
+		margin: 0 auto 30px;
+	}
+
+	h1#restaurant-name, .inside h2, img#restaurant-img, #restaurant-cuisine, #restaurant-address, #restaurant-hours{
+		margin-left: 20px;
+	}
+}
+
+@media screen and (min-width: 731px) and (max-width: 1085px){
+	#restaurants-list {
+		grid-template-columns: 1fr 1fr;
+		margin: 0 20px;
+	}
+
+	#restaurant-container, #reviews-container{
+		padding: 140px 15px 30px;
+	}
+
+	#reviews-container{
+		padding-top: 20px;
+	}
+	ul#reviews-list li{
+		margin: 0 0px 30px;
+		padding: 0 10px 20px;
+	}
+	div.leaflet-control-zoom.leaflet-bar.leaflet-control{
+		display: relative;
+		top: 40px;
+	}
+}
+
+@media screen and (min-width: 1086px){
+	ul#reviews-list li{
+		margin: 0 0px 30px;
+		padding: 0 10px 20px;
+	}
+	div.leaflet-control-zoom.leaflet-bar.leaflet-control{
+		display: relative;
+		top: 40px;
+	}
+}
