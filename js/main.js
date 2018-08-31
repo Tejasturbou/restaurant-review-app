@@ -217,6 +217,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 }
 
 
+
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
@@ -228,3 +229,10 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 
+if(navigator.serviceWorker){
+  navigator.serviceWorker.register('sw.js').then(function(){
+    console.log("registered");
+  }).catch(function(){
+    console.log("Ehhhhh....");
+  });
+}
