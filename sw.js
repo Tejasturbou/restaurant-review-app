@@ -34,9 +34,6 @@ self.addEventListener('fetch', function(evt){
 	evt.respondWith(
 		caches.match(evt.request).then(function(response){
 			return response ? response : fetch(evt.request).then(function(respond){
-				if (respond.status === 404) {
-					return;
-				}
 				return caches.open('restaurant-review').then(function(cache){
 					cache.put(evt.request.url, respond.clone());
 					return respond;
